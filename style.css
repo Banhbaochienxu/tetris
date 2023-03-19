@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: #fff;
+}
+.score-box{
+    padding: 20px 0;
+    margin-left: 55%;
+    text-transform: uppercase;
+    color: #fff;
+}
+#score{
+    display: inline;
+    
+}
+body{
+    background: url(img/drawing-colorful-black-digital-art-video-games-text-262556-wallhere.com.jpg);
+    background-size: 100% 100%
+}
+canvas{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
