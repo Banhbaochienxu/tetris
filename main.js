@@ -40,7 +40,6 @@ class Piece {
         this.color = color;
 
         let N = Math.floor(Math.random() * (this.shape.length));
-        console.log(N);
         this.shapeN = N;
         this.actionShape = this.shape[this.shapeN];
 
@@ -130,7 +129,7 @@ class Piece {
                 }
 
                 if(this.y + r < 0){
-                    alert('game over');
+                    alert(`game over\nSố điểm của bạn là: ` + score);
                     gameOver = true;
                     break;
                 }
@@ -237,4 +236,8 @@ function drop(){
     }, 1000)
 }
 
-drop();
+function start(){
+    const btnStart = document.querySelector('.btn-start')
+    btnStart.style.display = 'none'
+    drop();
+}
