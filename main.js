@@ -123,6 +123,9 @@ class Piece {
 
     lock(){
         for (let r = 0; r < this.actionShape.length; r++){
+            if(gameOver == true){
+                break;
+            }
             for (let c = 0; c < this.actionShape.length; c++){
                 if(!this.actionShape[r][c]){
                     continue;
